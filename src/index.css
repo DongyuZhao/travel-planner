@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Microsoft Yahei UI';
+    font-size: 16px;
+}
+
+hr {
+    height:1px;
+    border:0px;
+    border-top:1px solid #ccc;
+    margin:0px;
+    padding:0px;
+    overflow:visible;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.stretch {
+    flex: 1 1 auto;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #eee;
+    width: 360px;
+    padding: 8px;  
+}
+
+.card.commute {
+    border-color: #ddd;
+}
+
+.card.commute hr {
+    border-color: #ddd;
+}
+
+.card.place {
+    border-color: #0f760f;
+}
+
+.card.place hr {
+    border-color: #0f760f;
+}
+
+.svg-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.12em;
+}
+
+.timeline-section {
+    position: relative;
+    padding-left: 24px;
+}
+
+.timeline-section::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #ddd;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.timeline-section.commute::before {
+    background: #ddd;
+}
+
+.timeline-section.place::before {
+    background: #0f760f;
+}
+
+.timeline-section::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.timeline-item {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.timeline-item-icon {
+    background: #ddd;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    left: -24px;
+    overflow: hidden;
+    margin-left: -12px;
+    border-radius: 50%;
+}
+
+.timeline-item-icon.commute {
+    background: #007acc;
+}
+
+.timeline-item-icon.place {
+    background: #0f760f;
+}
+
+.timeline-item-icon .icon {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+    color: #fff;
+}
+
+.timeline-item-content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    width: 0;
+    height: 0;
+    left: 0px;
+    margin-left: -6px;
+    border-left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #ddd;
+}
+
+.timeline-item-content.commute::before {
+    border-right: 7px solid #ddd;
+}
+
+.timeline-item-content.place::before {
+    border-right: 7px solid #0f760f;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.time-consume{
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+}
+
+.service-time {
+    color: #777;
+    font-size: 12px;
+}
+
+.service-start{
+    padding-right: 4px; 
+}
+
+.service-end{
+    padding-left: 4px; 
+}
+
+.service-time-appendix {
+    color: #c80000;
+    padding-left: 8px;
+}
+
+.flight {
+    font-size: 12px;
+}
+
+.flight .airline {
+    color: #eb7b07;
+}
+
+.flight .flight-number {
+    color: #777;
+}
+
+.flight .icon {
+    transform: rotate(90deg);
+    fill: #0f760f;
+}
+
+.ground-transport {
+    font-size: 12px;
+}
+
+.ground-transport-info {
+    border-left-color: #aaa;
+    border-left-width: 2px;
+    border-left-style: dashed;
+    padding-left: 8px;
+}
+
+.ground-transport-info .carrier {
+    color: #eb7b07;
+}
+
+.ground-transport-info .number{
+    color: #777;
+}
+
+.aircraft {
+    color: #777;
+    font-size: 12px;
+}
+
+.airport {
+    align-items: baseline;
+    justify-content: center;
+}
+
+.airport .name {
+    color: #007acc;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.airport .terminal {
+    color: #c80000;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.ground-station .name {
+    color: #007acc;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.ground-station .platform {
+    color: #c80000;
+    font-size: 12px;
+    padding: 6px;
+}
+
+.commute .date {
+    color: #777;
+    font-size: 12px;
+}
+
+.commute .time {
+    color: #333;
+    font-size: 16px;
+}
+
+.transfer-time-info {
+    fill: #777;
+    color: #777;
+    align-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.transfer-time-info .svg-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.place-name {
+    color: #0f760f;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.place-type {
+    color: #777;
+    font-size: 12px;
+    text-align: left;
+}
+
+.place-address {
+    color: #777;
+    font-size: 12px;
+    text-align: left;
+}
+
+.card-note {
+    color: #c80000;
+    fill: #c80000;
+    font-size: 14px;
+}
+
+hr.card-note {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
