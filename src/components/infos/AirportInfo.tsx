@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { ICommuteStation } from '../../shared/Types';
+import { ICommuteStation } from '../../shared/Interfaces';
 
 export class AirportInfo extends React.Component<ICommuteStation> {
     public render() {

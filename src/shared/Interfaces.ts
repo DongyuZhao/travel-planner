@@ -15,7 +15,8 @@ export interface ICommuteStation {
     type: 'Air' | 'Bus' | 'Coach' | 'Tram' | 'Train' | 'Ferry';
 }
 
-export interface IPlace {
+export interface IPlaceInfo {
+    cardType: 'PlaceInfo';
     name: string;
     type: 'Natural' | 'Historical' | 'Modern' | 'Religion' | 'Entertainment' | 'Residence' | 'Restaurant';
     address: string;
@@ -41,8 +42,36 @@ export interface IGroundTransport extends ITransport {
 }
 
 export interface ITransferInfo {
+    cardType: 'TransferInfo';
     from: ICommuteStation;
     to: ICommuteStation;
     time: string;
     note?: string;
+}
+
+export interface IFlightInfo {
+    cardType: 'FlightInfo';
+    aircraft: IAircraft;
+    from: ICommuteStation;
+    to: ICommuteStation;
+    departureTime: IEventTime;
+    arrivalTime: IEventTime;
+    note?: string;
+}
+
+export interface IGroundTransportInfo {
+    cardType: 'GroundTransportInfo';
+    transport: IGroundTransport;
+    from: ICommuteStation;
+    to: ICommuteStation;
+    note?: string;
+}
+
+export interface ITimelineSection {
+    type: 'Boat' | 'Bus' | 'Camera' | 'Flight' | 'Hotel' | 'Metro' | 'Restaurant' | 'Train' | 'Tram' | 'Transfer';
+    card: IGroundTransportInfo | IFlightInfo | ITransferInfo | IPlaceInfo;
+}
+
+export interface ITimeline {
+    sections: ITimelineSection[];
 }

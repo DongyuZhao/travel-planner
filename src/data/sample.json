@@ -1,0 +1,93 @@
+{
+    "sections": [
+        {
+            "type": "Flight",
+            "card": {
+                "cardType": "FlightInfo",
+                "aircraft": {
+                    "type": "Air",
+                    "model": "B-77W",
+                    "no": 807,
+                    "carrier": "SQ"
+                },
+                "from": {
+                    "type": "Air",
+                    "name": "PEK",
+                    "sub": "T3"
+                },
+                "to": {
+                    "type": "Air",
+                    "name": "SIN",
+                    "sub": "T3"
+                },
+                "departureTime": {
+                    "date": "2018/09/30",
+                    "time": "23:30"
+                },
+                "arrivalTime": {
+                    "date": "2018/10/01",
+                    "time": "05:30"
+                }
+            }
+        },
+        {
+            "type": "Transfer",
+            "card": {
+                "cardType": "TransferInfo",
+                "from": {
+                    "type": "Air",
+                    "name": "PEK",
+                    "sub": "T3"
+                },
+                "to": {
+                    "type": "Air",
+                    "name": "SIN",
+                    "sub": "T3"
+                },
+                "time": "2:30"
+            }
+        },
+        {
+            "type": "Tram",
+            "card": {
+                "cardType": "GroundTransportInfo",
+                "transport": {
+                    "carrier": "PTV",
+                    "no": 57,
+                    "serviceTime": {
+                        "appendix": "",
+                        "end": "22:30",
+                        "start": "5:30"
+                    },
+                    "time": "30min",
+                    "type": "Tram"
+                },
+                "from": {
+                    "name": "Southern Cross",
+                    "sub": "South",
+                    "type": "Tram"
+                },
+                "to": {
+                    "name": "Elizabeth St.",
+                    "sub": "South",
+                    "type": "Tram"
+                }
+            }
+        },
+        {
+            "type": "Camera",
+            "card": {
+                "cardType": "PlaceInfo",
+                "name": "University of Melbourne",
+                "type": "Historical",
+                "address": "Carlton, 3051",
+                "serviceTime": {
+                    "appendix": "Close every weekend.",
+                    "end": "22:30",
+                    "start": "5:30"
+                },
+                "note": "Bring your card"
+            }
+        }
+    ]
+}

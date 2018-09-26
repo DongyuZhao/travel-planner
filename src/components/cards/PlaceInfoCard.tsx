@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import { IPlace } from '../../shared/Types';
+import { IPlaceInfo } from '../../shared/Interfaces';
 
 import { Card } from '../basic/Card';
 import { ServiceTimeInfo } from '../infos/ServiceTimeInfo';
 
-export class PlaceInfoCard extends React.Component<IPlace> {
+export class PlaceInfoCard extends React.Component<IPlaceInfo> {
     public render() {
         return (
             <Card

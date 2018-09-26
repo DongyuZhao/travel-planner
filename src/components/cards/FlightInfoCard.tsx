@@ -2,21 +2,12 @@ import * as React from 'react';
 
 import { Card } from '../basic/Card';
 
-import { IAircraft, ICommuteStation, IEventTime } from '../../shared/Types';
+import { IFlightInfo } from '../../shared/Interfaces';
 import { AircraftInfo } from '../infos/AircraftInfo';
 import { AirportInfo } from '../infos/AirportInfo';
 import { EventTimeInfo } from '../infos/EventTimeInfo';
 
-interface IProps {
-    aircraft: IAircraft;
-    from: ICommuteStation;
-    to: ICommuteStation;
-    departureTime: IEventTime;
-    arrivalTime: IEventTime;
-    note?: string;
-}
-
-export class FlightInfoCard extends React.Component<IProps> {
+export class FlightInfoCard extends React.Component<IFlightInfo> {
     public render() {
         return (
             <Card

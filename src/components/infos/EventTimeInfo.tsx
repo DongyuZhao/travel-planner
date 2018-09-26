@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IEventTime } from '../../shared/Types';
+import { IEventTime } from '../../shared/Interfaces';
 
 export class EventTimeInfo extends React.Component<IEventTime> {
     public render() {

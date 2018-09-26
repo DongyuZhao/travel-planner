@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IServiceTime } from '../../shared/Types';
+import { IServiceTime } from '../../shared/Interfaces';
 
 export class ServiceTimeInfo extends React.Component<IServiceTime> {
     public render() {

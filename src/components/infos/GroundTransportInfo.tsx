@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IGroundTransport } from '../../shared/Types';
+import { IGroundTransport } from '../../shared/Interfaces';
 import { ServiceTimeInfo } from './ServiceTimeInfo';
 
 export class GroundTransportInfo extends React.Component<IGroundTransport> {

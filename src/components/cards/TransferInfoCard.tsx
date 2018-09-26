@@ -1,10 +1,9 @@
 import * as React from 'react';
 
-import { ITransferInfo } from '../../shared/Types';
+import { ITransferInfo } from '../../shared/Interfaces';
 import { Card } from '../basic/Card';
 import { GroundStationInfo } from '../infos/GroundStationInfo';
 import { TransferTimeInfo } from '../infos/TransferTimeInfo';
-
 
 export class TransferCard extends React.Component<ITransferInfo> {
     public render() {

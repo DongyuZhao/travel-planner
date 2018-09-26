@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ICommuteStation } from '../../shared/Types';
+import { ICommuteStation } from '../../shared/Interfaces';
 
 export class GroundStationInfo extends React.Component<ICommuteStation> {
     public render() {

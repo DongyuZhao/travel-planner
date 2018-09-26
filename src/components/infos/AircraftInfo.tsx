@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IAircraft } from '../../shared/Types';
+import { IAircraft } from '../../shared/Interfaces';
 import { FlightIcon } from '../icons/FlightIcon';
 
 export class AircraftInfo extends React.Component<IAircraft> {
